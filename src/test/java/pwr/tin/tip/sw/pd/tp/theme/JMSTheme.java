@@ -2,10 +2,10 @@ package pwr.tin.tip.sw.pd.tp.theme;
 
 public class JMSTheme {
 	public final static String msgBrokerUrl = "tcp://localhost:61616";
-	public final static String cuInQueue = "queue/CU-IN";
-	public final static String cuResponseQueue = "queue/CU-REPLAY";
-	public final static String esbInQueue = "queue/ESB-IN";
-	public final static String esbResponseQueue = "queue/ESB-REPLAY";
+	public final static String CU_WF_RequestQueue = "queue/CU-WF/request";
+	public final static String CU_WF_ResponseQueue = "queue/CU-WF/response";
+	public final static String CU_EU_RequestQueue = "queue/CU-EU/request";
+	public final static String CU_EU_ResponseQueue = "queue/CU-EU/response";
 	
 	public final static String scenerioTemplate = 	"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>"+
 													"	<scenerio>"+ 

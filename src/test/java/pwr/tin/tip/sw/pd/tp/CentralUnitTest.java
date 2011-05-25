@@ -13,11 +13,11 @@ import pwr.tin.tip.sw.pd.tp.utils.XmlUtils;
 
 public class CentralUnitTest {
 
-	private final JMSListener esbListener = JMSListener.getInstance(JMSTheme.msgBrokerUrl, JMSTheme.esbInQueue);
-	private final JMSListener cuListener = JMSListener.getInstance(JMSTheme.msgBrokerUrl, JMSTheme.cuResponseQueue);
+	private final JMSListener esbListener = JMSListener.getInstance(JMSTheme.msgBrokerUrl, JMSTheme.CU_EU_ResponseQueue);
+	private final JMSListener cuListener = JMSListener.getInstance(JMSTheme.msgBrokerUrl, JMSTheme.CU_WF_RequestQueue);
 	
-	private final JMSSender cuSender = JMSSender.sendTo(JMSTheme.msgBrokerUrl, JMSTheme.cuInQueue);
-	private final JMSSender esbSender = JMSSender.sendTo(JMSTheme.msgBrokerUrl, JMSTheme.esbResponseQueue);
+	private final JMSSender cuSender = JMSSender.sendTo(JMSTheme.msgBrokerUrl, JMSTheme.CU_WF_RequestQueue);
+	private final JMSSender esbSender = JMSSender.sendTo(JMSTheme.msgBrokerUrl, JMSTheme.CU_EU_RequestQueue);
 	
 	/**
 	 * Test sprawdzaj±cy mo¿liwo¶ci procesowania jednej wiadomo¶ci zawieraj±cej scenariusz testowy.
