@@ -6,6 +6,8 @@ public class JMSTheme {
 	public final static String CU_WF_ResponseQueue = "queue/CU-WF/response";
 	public final static String CU_EU_RequestQueue = "queue/CU-EU/request";
 	public final static String CU_EU_ResponseQueue = "queue/CU-EU/response";
+	public final static String WF_CU_RequestQueue = "queue/WF-CU/request";
+	public final static String WF_CU_ResponseQueue = "queue/WF-CU/response";
 	
 	public final static String scenerioTemplate = 	"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>"+
 													"	<scenerio>"+ 
